@@ -1,0 +1,25 @@
+<div class="card">
+
+<div class="header">
+<%= image_tag "logo2.png"%>
+<h1 id="fit">MyFitness</h1>
+</div>
+<ul >
+
+</ul><ul class="card">
+<% @workouts.each do |workout| %>
+  <li>
+    <input type="checkbox" name=""/>
+   <a href="/myfitness/show/<%= workout.id %>"><%= workout.workout_name %></a>
+   <span><%= workout.description%></span>
+    <span ><%= workout.time %></span>
+  
+  </li>
+<% end %>
+</ul>
+
+<div id="new-workout-block">
+<a href="/myfitness/new/" class="button add-new-workout-button" id="add-new-workout-button">Add a workout..</a>
+</div>
+
+</div>

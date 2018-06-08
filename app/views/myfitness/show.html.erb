@@ -1,0 +1,16 @@
+<div class="container">
+    <h1 id="ww">Workouts </h1>
+     <div class="list">
+   <h3>Workout #<%= params[:id] %></h3>
+
+
+ <h2><%= @workout.workout_name  %></h2>
+ <h3>Workout #<%= params[:id] %></h3>
+ <span><%= @workout.description%></span>
+<span ><%= @workout.time %> Minutes</span>
+<br>
+<a href="/myfitness/edit/<%= @workout.id %>" >Edit</a>
+ <a href="/myfitness/destroy/<%= @workout.id %>">Delete</a>
+ <a href="/" >Go back...</a>
+</div>
+</div>

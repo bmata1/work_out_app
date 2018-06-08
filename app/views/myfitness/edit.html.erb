@@ -1,0 +1,12 @@
+<div class="card">
+  <h2  >Edit this workout...</h2>
+
+  <form action="/myfitness/update/<%= @workout.id %>">
+    <input class="text-input" name="description" type="text" value="<%= @workout.description %>">
+    <input class="text-input" name="time" type="number" value="<%= @workout.time %>">
+    <input class="text-input" name"workout_name" type="text" value="<%= @workout.workout_name%>"
+    <input class="text-input" id="new-body-description" name="workout_name" type="text" placeholder="Part of the body...">
+    <input class="button add-new-todo-button" type="submit" value="Edit Workout">
+    <a href="/" class="simple-link">Go back...</a>
+  </form>
+</div>
